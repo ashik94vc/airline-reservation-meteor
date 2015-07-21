@@ -1,0 +1,14 @@
+{
+  "name": "AirlineReservationSystem",
+  "version": "1.0.0",
+  "description": "Airline Reservation System using NodeJS,ExpressJS and polymer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashik Vetrivelu <ashik@cepheuen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}

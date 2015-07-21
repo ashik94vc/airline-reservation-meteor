@@ -1,0 +1,24 @@
+{
+  "name": "Airline Reservation System",
+  "version": "1.0.0",
+  "authors": [
+    "Ashik Vetrivelu <vcashik@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "core-elements": "Polymer/core-elements#~0.5.6",
+    "paper-elements": "Polymer/paper-elements#~0.5.6"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.5",
+    "polymer": "^0.5"
+  }
+}
