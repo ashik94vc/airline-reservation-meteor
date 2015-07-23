@@ -1,4 +1,4 @@
-<polymer-element name="flight-card" attributes="size">
+<polymer-element name="sample-content" attributes="size">
 <script>
   (function() {
     var strings = [
@@ -17,24 +17,24 @@
       'Modus commodo minimum eum te, vero utinam assueverit per eu.',
       'No nam ipsum lorem aliquip, accumsan quaerendum ei usu.'
     ];
-    function randomString() {
+    function  {
       return strings[Math.floor(Math.random() * strings.length)];
     }
     function randomLetter() {
-      return String.fromCharCode(65 + Math.floor(Math.random() * 26));
+      return String.fromCharCode(65  Math.floor(Math.random() * 26));
     }
     Polymer('sample-content', {
       size: 0,
       sizeChanged: function() {
         this.innerHTML = '';
-        for (var i = 0; i < this.size; i++) {
-          this.innerHTML +=
-            '<div style="border: 1px solid #bebebe; padding: 16px; margin: 16px; border-radius: 5px; background-color: #fff; color: #555;">' +
-            '<div style="display: inline-block; height: 64px; width: 64px; border-radius: 50%; background: #ddd; line-height: 64px; font-size: 30px; color: #666; text-align: center;">'+ randomLetter() + '</div>' +
-            '<div style="font-size: 22px; padding: 8px 0 16px; color: #888;">' + randomString() + '</div>' +
-            '<div style="font-size: 16px; padding-bottom: 8px;">' + randomString() + '</div>' +
-            '<div style="font-size: 12px;">' + randomString() + '</div>' +
-            '<div style="font-size: 12px;">' + randomString() + '</div>' +
+        for (var i = 0; i < this.size; i) {
+          this.innerHTML =
+            '<div style="border: 1px solid #bebebe; padding: 16px; margin: 16px; border-radius: 5px; background-color: #fff; color: #555;">'
+            '<div style="display: inline-block; height: 64px; width: 64px; border-radius: 50%; background: #ddd; line-height: 64px; font-size: 30px; color: #666; text-align: center;">' randomLetter()  '</div>'
+            '<div style="font-size: 22px; padding: 8px 0 16px; color: #888;">'    '</div>'
+            '<div style="font-size: 16px; padding-bottom: 8px;">'    '</div>'
+            '<div style="font-size: 12px;">'    '</div>'
+            '<div style="font-size: 12px;">'    '</div>'
             '</div>';
         }
       }
@@ -42,3 +42,10 @@
   })();
 </script>
 </polymer-element>
+<div style="border: 1px solid #bebebe; padding: 16px; margin: 16px; border-radius: 5px; background-color: #fff; color: #555;">
+<div style="display: inline-block; height: 64px; width: 64px; border-radius: 50%; background: #ddd; line-height: 64px; font-size: 30px; color: #666; text-align: center;"></div>
+<div style="font-size: 22px; padding: 8px 0 16px; color: #888;"></div>
+<div style="font-size: 16px; padding-bottom: 8px;"></div>
+<div style="font-size: 12px;"> </div>
+<div style="font-size: 12px;"></div> 
+</div>
