@@ -39,6 +39,9 @@ app.get('/schedule',function(req,res) {
     res.json(data)
   })
 })
+app.get('/test',function(req,res) {
+    res.render('test')
+})
 var server = app.listen(5000, function () {
   var host = server.address().address;
   var port = server.address().port;
