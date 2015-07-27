@@ -1,0 +1,26 @@
+paper-input-decorator /deep/ .unfocused-underline {
+    /* line color when the input is unfocused */
+    background-color: black;
+}
+paper-input-decorator[focused] /deep/ .floated-label .label-text {
+    /* floating label color when the input is focused */
+    color: black;
+}
+paper-input-decorator /deep/ .focused-underline {
+    /* line color when the input is focused */
+    background-color: ; #36648b;
+}
+paper-input-decorator.invalid[focused] /deep/ .floated-label .label-text,
+paper-input-decorator[focused] /deep/ .error {
+    /* floating label, error message nad error icon color when the input is invalid and focused */
+    color: #669999;
+}
+paper-input-decorator /deep/ .label-text,
+
+    /* inline label,  floating label, error message and error icon color when the input is unfocused */
+    color: #669999;
+}
+paper-input-decorator /deep/ .error {
+  color :red;
+}
+

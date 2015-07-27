@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>lalala</title>
+
+  <meta name="viewport"
+  content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  
+
+  
+  <link rel="import" href="login_template_new.html">
+  <link rel="stylesheet" href="paper_input_dec.css">
+  </head>
+  <body unresolved>
+    <airline-form>
+      <paper-input-decorator label="First Name" floatinglabel>
+    <input is="core-input">
+</paper-input-decorator>
+<paper-input-decorator label="Last Name" floatinglabel>
+    <input is="core-element">
+</paper-input-decorator >
+<paper-input-decorator label="Date of Birth" id="dob" error="Enter a proper date" floatinglabel autovalidate>
+  
+    <input is="core-input" pattern="\d{1,2}/\d{1,2}/\d{4}">-
+</paper-input-decorator>
+<paper-input-decorator label="Mobile number" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+<paper-input-decorator label="e-mail address" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+<paper-input-decorator label="" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+<paper-input-decorator label="Emergenct contact" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+<paper-input-decorator label="Citizenship" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+<paper-input-decorator label="Ethinicity" floatinglabel>
+  <input is="core-element">
+</paper-input-decorator>
+
+
+    </airline-form>
+  </body>
+  </html>
