@@ -4,11 +4,14 @@ var http = require('http')
 var app = express()
 var mongoose = require('mongoose')
 
-mongoose.connect("mongodb://localhost:27017/airline_db",function(error){
+// mongoose.connect("mongodb://localhost:27017/airline_db",function(error){
+//   if(error)
+//     console.error(error)
+// });
+mongoose.connect("mongodb://admin:root@ds027483.mongolab.com:27483/airline",function(error){
   if(error)
     console.error(error)
 });
-
 var flightSchema = mongoose.Schema({
 })
 var flights = mongoose.model('flight_details',flightSchema)

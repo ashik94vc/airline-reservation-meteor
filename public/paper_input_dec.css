@@ -23,4 +23,8 @@ paper-input-decorator /deep/ .label-text,
 paper-input-decorator /deep/ .error {
   color :red;
 }
-
+.container
+{
+  padding: 30px;
+  margin: auto auto;
+}
