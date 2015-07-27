@@ -25,13 +25,15 @@
     <paper-input-decorator label="Date of Birth" id="dob" error="Enter a proper date" floatinglabel autovalidate>
       <input is="core-input" pattern="\d{1,2}/\d{1,2}/\d{4}">-
     </paper-input-decorator>
-    <paper-input-decorator label="Mobile number" floatinglabel>
-      <input is="core-element">
-    </paper-input-decorator>
+      <paper-input-decorator label="Mobile number- Enter with +countrycode">
+          <input id="i1" is="core-input" maxlength="13">
+          <paper-char-counter class="counter" target="i1"></paper-char-counter>
+      </paper-input-decorator>
+
     <paper-input-decorator label="e-mail address" floatinglabel>
       <input is="core-element">
     </paper-input-decorator>
-    <paper-input-decorator label="Emergenct contact" floatinglabel>
+    <paper-input-decorator label="Emergency contact" floatinglabel>
       <input is="core-element">
     </paper-input-decorator>
     <paper-input-decorator label="Citizenship" floatinglabel>
