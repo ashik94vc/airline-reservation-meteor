@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+
+<head>
+
+    <title>lalala</title>
+
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link href="bower_components/polymer/polymer.html" rel="import">
+    <link href="lalalatest.html" rel="import" />
+    
+</head>
+<body>
+    <lalalatest>
+        <paper-input-decorator label="First Name" floatinglabel>
+            <input is="core-input">
+        </paper-input-decorator>
+        <paper-input-decorator label="Last Name" floatinglabel>
+            <input is="core-element">
+        </paper-input-decorator>
+        <paper-input-decorator label="Date of Birth" id="dob" error="Enter a proper date" floatinglabel autovalidate>
+            <input is="core-input" pattern="\d{1,2}/\d{1,2}/\d{4}">-
+        </paper-input-decorator>
+        <paper-input-decorator label="Mobile number- Enter with +countrycode">
+            <input id="i1" is="core-input" maxlength="13">
+            <paper-char-counter class="counter" target="i1"></paper-char-counter>
+        </paper-input-decorator>
+
+        <paper-input-decorator label="e-mail address" floatinglabel>
+            <input is="core-element">
+        </paper-input-decorator>
+        <paper-input-decorator label="Emergency contact" floatinglabel>
+            <input is="core-element">
+        </paper-input-decorator>
+        <paper-input-decorator label="Citizenship" floatinglabel>
+            <input is="core-element">
+        </paper-input-decorator>
+        <paper-input-decorator label="Ethinicity" floatinglabel>
+            <input is="core-element">
+        </paper-input-decorator>
+    </lalalatest>
+
+</body>
+</html>

@@ -48,9 +48,10 @@ app.get('/test',function(req,res) {
 app.get('/lalalatest', function (req, res) {
     res.render('lalalatest')
 });
-app.get('/testingPolymer', function (req, res) {
-    res.render('testingPolymer')
+app.get('/TemplateTest', function (req, res) {
+    res.render('TemplateTest')
 });
+
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;

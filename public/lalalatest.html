@@ -78,7 +78,8 @@
         }
 </style>
 <body unresolved>
-    
+
+    <polymer-element ="paper-action-test">
         <template is="auto-binding">
 
             <section on-tap="{{toggleDialog1}}">
@@ -89,32 +90,9 @@
                 </paper-button>
 
                 <paper-action-dialog backdrop autoclosedisabled layered="false" resizerispeer="false">
-                    <paper-input-decorator label="First Name" floatinglabel>
-                        <input is="core-input">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Last Name" floatinglabel>
-                        <input is="core-element">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Date of Birth" id="dob" error="Enter a proper date" floatinglabel autovalidate>
-                        <input is="core-input" pattern="\d{1,2}/\d{1,2}/\d{4}">-
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Mobile number- Enter with +countrycode">
-                        <input id="i1" is="core-input" maxlength="13">
-                        <paper-char-counter class="counter" target="i1"></paper-char-counter>
-                    </paper-input-decorator>
+                    <content>
 
-                    <paper-input-decorator label="e-mail address" floatinglabel>
-                        <input is="core-element">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Emergency contact" floatinglabel>
-                        <input is="core-element">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Citizenship" floatinglabel>
-                        <input is="core-element">
-                    </paper-input-decorator>
-                    <paper-input-decorator label="Ethinicity" floatinglabel>
-                        <input is="core-element">
-                    </paper-input-decorator>
+                    </content>
 
 
                     <paper-button affirmative autofocus>Tap me to close</paper-button>
@@ -126,7 +104,7 @@
 
 
         </template>
-    
+    </polymer-element>
     <script>
         var scope = document.querySelector('template[is=auto-binding]');
         scope.toggleDialog1 = function (e) {
@@ -139,9 +117,10 @@
             }
             d.toggle();
         };
-        
-       
+
+
     </script>
 
 </body>
+
 </html>
