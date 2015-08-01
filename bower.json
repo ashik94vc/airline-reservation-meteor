@@ -16,10 +16,24 @@
     "polymer": "Polymer/polymer#~1.0.7",
     "core-elements": "Polymer/core-elements#~0.5.6",
     "paper-elements": "Polymer/paper-elements#~0.5.6",
-    "platform": "Polymer/platform#~0.4.2"
+    "platform": "Polymer/platform#~0.4.2",
+    "paper-date-picker": "~0.1.5"
   },
   "resolutions": {
     "webcomponentsjs": "^0.5",
-    "polymer": "^0.5"
+    "polymer": "^0.5",
+    "core-animated-pages": "master",
+    "core-resizable": "^0.5",
+    "core-a11y-keys": "^0.5",
+    "core-focusable": "^0.5",
+    "core-icon": "^0.5",
+    "core-iconset": "^0.5",
+    "core-icons": "^0.5",
+    "core-iconset-svg": "^0.5",
+    "core-meta": "^0.5",
+    "core-overlay": "^0.5",
+    "core-selection": "^0.5",
+    "core-selector": "^0.5",
+    "core-style": "^0.5"
   }
 }

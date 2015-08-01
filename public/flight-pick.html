@@ -1,0 +1,121 @@
+  <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="bower_components/paper-input/paper-input-decorator.html">
+  <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-date-picker/paper-date-picker-dialog.html">
+  <polymer-element name="flight-pick">
+  <template id="flightform">
+  <style shim-shadowdom>
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+    }
+    #dateinput {
+      float:left;
+    }
+    .container {
+      margin:0 auto;
+      position: relative;
+      background: white;
+      display: inline-block;
+      text-align: center;
+      width: 300px;
+      padding: 30px;
+    }
+    .wrapper{
+      text-align: center;
+    }
+    .formtable {
+      display: inline-block;
+    }
+    core-icon-button{
+      float: left;
+    }
+    .submit {
+      background: blue;
+      color: white;
+    }
+  </style>
+  <div class="wrapper">
+    <div class="container">
+      <paper-card z=1>
+      <table class="formtable">
+        <tr>
+          <td>
+            Source
+          </td>
+          <td>
+            <paper-dropdown-menu>
+            </paper-dropdown-menu>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Destination
+          </td>
+          <td>
+            <paper-dropdown-menu>
+            </paper-dropdown-menu>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Date
+          </td>
+          <td>
+            <paper-input-decorator id="dateinput" floatinglabel>
+              <input is="core-input" id="mydateinput" value="{{mydateinput}}">
+            </paper-input-decorator>
+          </td>
+          <td>
+            <core-icon-button id="pickdate" icon="today" on-tap={{openCalender}} raised>
+            </core-icon-button>
+          </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <paper-button class="submit" raised>
+              Search
+            </paper-button>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </paper-card>
+    </div>
+    <paper-date-picker-dialog id="picker"></paper-date-picker-dialog>
+  </div>
+</template>
+<script>
+function dateform(s) { return (s < 10) ? '0' + s : s; }
+var template = document.querySelector('#flightform');
+Polymer({
+
+  ready: function() {
+    datePicker = this.$.picker;
+    datePicker.addEventListener('value-changed', function(e){
+    datestamp = datePicker.value;
+    var date = [dateform(datestamp.getDate()),dateform(datestamp.getMonth()+1),dateform(datestamp.getFullYear())].join('/');
+    this.mydateinput = date;
+  }.bind(this));
+  },
+  openCalender: function() {
+    this.$.picker.open();
+  }
+});
+</script>
+</polymer-element>

@@ -42,6 +42,9 @@ app.get('/schedule',function(req,res) {
     res.json(data)
   })
 })
+app.get('/home',function(req,res) {
+  res.render('pickflight')
+})
 app.get('/test',function(req,res) {
     res.render('test')
 })
