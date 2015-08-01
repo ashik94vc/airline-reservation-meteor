@@ -42,6 +42,12 @@ app.get('/schedule',function(req,res) {
     res.json(data)
   })
 })
+app.get('/places',function(req,res){
+  flights.find({},'source',function (error,data)
+  {
+    res.json(data)
+  })
+})
 app.get('/home',function(req,res) {
   res.render('pickflight')
 })
